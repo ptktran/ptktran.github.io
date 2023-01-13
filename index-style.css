@@ -40,7 +40,7 @@ a, h1, p {
     color: #1db954;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 300px) {
     main {
         margin: 20% 5% 20% 5%;
     }
