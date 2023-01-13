@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300;400;500;700&family=Sarina&display=swap');
+
+.logo {
+    font-family: 'Neonderthaw', cursive;
+    color: white;
+    font-weight: lighter;
+    font-size: 3.3em;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (min-width: 400px) {
+    .logo {
+        font-size: 2.3em;
+        margin: -10px 0;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px 0px 30px;
+    }
+
+    #links a {
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .logo {
+        font-size: 3.3em;
+        margin: -45px 0;
+    }
+
+    .navigation {
+        padding: 1% 3% 0 3%;
+    }
+
+    #links a {
+        margin: 20px;
+        font-size: 1.2em;
+    }
+}
