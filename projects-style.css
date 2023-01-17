@@ -19,16 +19,6 @@ h2 {
     border-bottom: 0.5px solid white;
 }
 
-#links a, .socials a {
-    transition: all 200ms ease;
-    display: inline-block;
-}
-
-#links a:hover, .socials a:hover {
-    opacity: 80%;
-    transform: translate(0, -2px);
-}
-
 .project-card {
     background-color: #fff;
     margin: 0 auto;
