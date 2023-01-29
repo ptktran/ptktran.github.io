@@ -75,12 +75,16 @@ h2 {
     .project-card:hover {
         z-index: 10;
         transform: scale(1.01);
-        cursor: pointer;
     }
 
     .project-card a {
         color: black;
         font-size: 1em;
+        transition: all 200ms ease;
+    }
+
+    .project-card a:hover{
+        opacity: 80%;
     }
 
     .project-card p {
@@ -129,12 +133,16 @@ h2 {
     .project-card:hover {
         z-index: 10;
         transform: scale(1.01);
-        cursor: pointer;
     }
 
     .project-card a {
         color: black;
         font-size: 1.2em;
+        transition: all 200ms ease;
+    }
+
+    .project-card a:hover{
+        opacity: 80%;
     }
 
     .project-card p {
