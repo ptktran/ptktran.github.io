@@ -54,10 +54,11 @@ h2 {
     }
 
     .project-card.spotifyvisualizer {
-        z-index: 5
+        z-index: 5;
     }
 
     .project-card.weatheroutfitter {
+        top: -5px;
         z-index: 4;
     }
 
