@@ -53,6 +53,14 @@ h2 {
         margin-top: 40px;
     }
 
+    .project-card.spotifyvisualizer {
+        z-index: 5
+    }
+
+    .project-card.weatheroutfitter {
+        z-index: 4;
+    }
+
     .project-card.personalweb {
         top: -10px;
         z-index: 3;
@@ -63,12 +71,8 @@ h2 {
         z-index: 2;
     }
 
-    .project-card.weatheroutfitter {
-        z-index: 4;
-    }
-
     .project-card:hover {
-        z-index: 5;
+        z-index: 10;
         transform: scale(1.01);
     }
 
@@ -101,6 +105,15 @@ h2 {
         margin-top: 40px;
     }
 
+    .project-card.spotifyvisualizer {
+        z-index: 5;
+    }
+    
+    .project-card.weatheroutfitter {
+        z-index: 4;
+        top: -5px;
+    }
+
     .project-card.personalweb {
         top: -10px;
         z-index: 3;
@@ -111,12 +124,8 @@ h2 {
         z-index: 2;
     }
 
-    .project-card.weatheroutfitter {
-        z-index: 4;
-    }
-
     .project-card:hover {
-        z-index: 5;
+        z-index: 10;
         transform: scale(1.01);
     }
 
