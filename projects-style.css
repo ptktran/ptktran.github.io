@@ -75,6 +75,7 @@ h2 {
     .project-card:hover {
         z-index: 10;
         transform: scale(1.01);
+        cursor: pointer;
     }
 
     .project-card a {
@@ -128,6 +129,7 @@ h2 {
     .project-card:hover {
         z-index: 10;
         transform: scale(1.01);
+        cursor: pointer;
     }
 
     .project-card a {
