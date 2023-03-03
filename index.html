@@ -9,6 +9,26 @@
     <link rel="icon" type="image/png" href="./favicon.ico?" />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./index-style.css" />
+
+    <script>
+      const clientId = "fef82cf191c541929a78fe3860c01272";
+      const clientSecret = "5bb050b8f77a4f8781bbf1e3cc3b1742";
+
+      fetch("https://accounts.spotify.com/api/token", {
+        method: "POST",
+        headers: {
+          Authorization: "Basic " + btoa(clientId + ":" + clientSecret),
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: "grant_type=client_credentials",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+			const currentlyPlayingElement = document.getElementById('spotify');
+  			currentlyPlayingElement.innerHTML = `Currently playing: ${data.item.name} by ${data.item.artists[0].name}`;
+        })
+        .catch((error) => console.error(error));
+    </script>
   </head>
 
   <body>
@@ -54,6 +74,7 @@
           >spotify</a
         >
       </div>
+      <div class="spotify"></div>
     </main>
   </body>
 </html>
