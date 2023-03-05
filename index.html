@@ -57,35 +57,4 @@
       <p id="spotify"></p>
     </main>
   </body>
-  <script>
- 	const clientId = "fef82cf191c541929a78fe3860c01272";
-	const clientSecret = "5bb050b8f77a4f8781bbf1e3cc3b1742";
-
-	// Retrieve access token
-	fetch("https://accounts.spotify.com/api/token", {
-	method: "POST",
-	headers: {
-	Authorization: "Basic " + btoa(clientId + ":" + clientSecret),
-	"Content-Type": "application/x-www-form-urlencoded",
-	},
-	body: "grant_type=client_credentials",
-	})
-	.then((response) => response.json())
-	.then((data) => {
-	// Use access token to retrieve currently playing track
-	fetch("https://api.spotify.com/v1/me/player/currently-playing", {
-	headers: {
-	Authorization: "Bearer " + data.access_token,
-	},
-	})
-	.then((response) => response.json())
-	.then((data) => {
-	// Update HTML element with currently playing song
-	const currentlyPlayingElement = document.getElementById('spotify');
-	currentlyPlayingElement.innerHTML = `Currently playing: ${data.item.name} by ${data.item.artists[0].name}`;
-	})
-	.catch((error) => console.error(error));
-	})
-	.catch((error) => console.error(error));
-  </script>
 </html>
